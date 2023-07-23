@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    color: white;
+}
+.maingrid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 5px;
+}
+.mainitems{
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+}
+.grid2th{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    color: black;
+}
+.itemsof4th{
+    background-color: #cacaca;
+    padding: inherit;
+    border-radius: inherit;
+}
+.e{
+    grid-column: 1/3;
+}

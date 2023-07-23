@@ -1,0 +1,70 @@
+:root{
+    --yuksek:gray;
+    --orta:rgb(189, 189, 189);
+    --dusuk:rgb(231, 231, 231);
+   
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    'hd'
+    'sd1'
+    'art'
+    'sd2'
+    'ft'
+    ;
+    gap: 10px;
+    margin: 50px;
+   
+}
+main>*{
+    padding: 15px;
+    border-radius: 5px;
+}
+header{
+    grid-area: hd;
+}
+.Sidebar-1{
+    grid-area: sd1;
+    
+}
+
+.Sidebar-2{
+    grid-area: sd2;
+    background-color: var(--dusuk);
+}
+article{
+    grid-area: art;
+}
+footer{
+    grid-area: ft;
+}
+.hf{
+    background-color: var(--yuksek);
+}
+.sd1-a{
+    background-color: var(--yuksek);
+}
+
+/*
+body{
+    background-color: lightgreen;
+}
+*/
+
+/*
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  çalıştıramadım
+*/

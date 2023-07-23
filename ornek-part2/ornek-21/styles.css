@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    color: white;
+}
+main{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill,100px);/*bir satir boyunca 100px boyutunda kolonlar oluştur demenktir*/
+}
+.item{
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+.a{
+    grid-row: 1;
+    grid-column: 1/3;
+}
+.b{
+    grid-row:1 ;
+    grid-column: 3/5;
+}
+.c{
+    grid-row:2 ;
+    grid-column:1 ;
+}
+.d{
+    grid-row:2 ;
+    grid-column:2/5 ;
+}
+.e{
+    grid-row:3 ;
+    grid-column:1/5 ;
+}

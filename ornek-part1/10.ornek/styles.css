@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 40px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, [sutun] 50px ) ;
+    grid-template-rows: repeat(3, [satir] 25px  );
+    gap: 5px;
+    
+    
+}
+.item{
+    display: flex;
+    background-color: gray;
+    color: black;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.item-a{
+   grid-column: sutun /span 2;
+   grid-row: satir ;
+}
+
+.item-b{
+   grid-column: sutun 3 / span 2;
+   grid-row: satir ;
+}
+
+.item-c{
+   grid-column: sutun ;
+   grid-row: satir 2;
+    
+}
+
+.item-d{
+   grid-column: sutun 2 /span 3;
+   grid-row: satir 2;
+}
+.item-e{
+    grid-column: sutun /span 4;
+    grid-row: satir 3;
+   
+}
+
+/*indexler 1'den başlıyor*/

@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 35px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-areas: 
+    '... hd hd'
+    'sb art art'
+    'ft ft ft'
+    ;
+    gap: 5px;
+    justify-content: center;
+}
+.container>*{
+    background-color: rgb(56, 56, 56);
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 15px;
+}
+header{
+    grid-area: hd;
+   
+}
+footer{
+    grid-area: ft;
+    
+}
+aside{
+    grid-area: sb;
+}
+article{
+    grid-area: art;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+h5{
+    text-align: center;
+}
+p::first-letter{
+    font-size: 35px;
+    color: red;
+}
+.header,.footer{
+    background-color: gray;
+}
