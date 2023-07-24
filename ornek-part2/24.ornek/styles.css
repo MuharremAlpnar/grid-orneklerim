@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+}
+.main{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6,50px);
+}
+.item{
+    padding: 10px;
+    background-color: #444;
+    font-size: 25px;
+    border-radius: 5px;
+    order: 1;
+}
+.main :nth-child(even){
+    background-color: #c6c6c6;
+}
+.item1{
+    order: 4;
+}
+.item2{
+    order: 3;
+}
+/*order az olanlar varsayılan olarak dizilir sonrasında order az olanlar dizilmeye başlar*/

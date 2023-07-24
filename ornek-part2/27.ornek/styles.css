@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+}
+.container{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    /*kontainerin alanına göre minimum 200px max ise alanı tamamen kapsayacak kolonlar oluşturur*/
+    /*auto-fill özelliğinden dolayı bir satıra 200px lik başka bir item gelebilme ihtimali varsa gelir fakat 200px ile başlar. sayfa buyurse itemlerde buyur fakat başka bir 200pxlik yer oluşursa o satıra bir item daha yerleşir*/
+}
+.item{
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    
+    
+}

@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 20px;
+}
+.container{
+    display: grid;
+    grid-template-columns: minmax(200px,1fr) 200px 200px;
+    /*ilk kolonun minimum 200px olması gerekir diğerlei her zaman 200px olmalı sayfa çök küçülürse scrool çkar devamını görmek için kaydırmamız gerekir*/
+    gap: 5px;
+}
+.item{
+    background-color: #444;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
